@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #FAF7E7; /* Pure Ivory */
+    --foreground: #041210; /* Very dark saffron */
+    --card: #FFFDF2; /* Pure White */
+    --card-foreground: #C16623; /* Very dark navy */
+    --popover: #FAF7E7; /* Pure White */
+    --popover-foreground: #C16623; /* Very dark navy */
+    --primary: #C16623; /* Dark grayish blue */
+    --primary-foreground: #EEEBDD; /* Pale cyan */
+    --secondary: #DFCAAC; /* Very light grayish blue */
+    --secondary-foreground: #291C08; /* Dark grayish blue */
+    --muted: #D7D4C7; /* Very light grayish blue */
+    --muted-foreground: #45443E; /* Muted grayish blue */
+    --accent: #DFCAAC; /* Very light grayish blue */
+    --accent-foreground: #513C1E; /* Dark grayish blue */
+    --destructive: #C85353; /* Bright reddish pink */
+    --destructive-foreground: #FFFDF2; /* Pale cyan */
+    --border: #B9A281; /* Very light grayish blue */
+    --input: #B9A281; /* Very light grayish blue */
+    --ring: #24683F; /* Very dark navy */
+    --radius: 0.5rem; /* No change */
+    --chart-1: #F68686; /* Vibrant orange-red */
+    --chart-2: #7AD39E; /* Deep teal */
+    --chart-3: #513C1E; /* Dark steel blue */
+    --chart-4: #BDFB97; /* Bright yellow-green */
+    --chart-5: #FFA767; /* Vibrant yellow-orange */
+  }
+
+  .dark {
+    --background: #0b0702; /* Very dark navy */
+    --foreground: #FFC79E; /* Pale cyan */
+    --card: #1d1205; /* Very dark navy */
+    --card-foreground: #FFFDF2; /* Pale cyan */
+    --popover: #1a1e29; /* Very dark navy */
+    --popover-foreground: #ffe7d6; /* Pale cyan */
+    --primary: #FFFDF2; /* Pale cyan */
+    --primary-foreground: #1d1205; /* Dark grayish blue */
+    --secondary: #9ADD70; /* Dark grayish teal */
+    --secondary-foreground: #170e04; /* Pale cyan */
+    --muted: #2c3a42; /* Dark grayish teal */
+    --muted-foreground: #DFCAAC; /* Muted cyan-gray */
+    --accent: #170e04; /* Dark grayish teal */
+    --accent-foreground: #f7fcff; /* Pale cyan */
+    --destructive: #C85353; /* Dark reddish brown */
+    --destructive-foreground: #f7fcff; /* Pale cyan */
+    --border: #513C1E; /* Dark grayish teal */
+    --input: #472a09; /* Dark grayish teal */
+    --ring: #E88B47; /* Muted sky blue */
+    --chart-1: #F68686; /* Bright blue */
+    --chart-2: #7AD39E; /* Moderate teal */
+    --chart-3: #513C1E; /* Vibrant orange */
+    --chart-4: #BDFB97; /* Vivid lavender */
+    --chart-5: #FFA767; /* Bright pinkish red */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
